@@ -1,0 +1,566 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    padding-left: 30px;
+    width: 300px;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categorias a {
+    color: #000;
+    text-decoration: none;
+}
+
+.icon-numero {
+    margin: 20px 0;
+    display: flex;
+    justify-items: end;
+    align-items: end;
+    padding-left: 600px;
+}
+
+.icon-numero small {
+    display: block;
+    font-size: 10px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/*BANNER*/
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.categorias {
+    display: flex;
+    padding: 5px 20px;
+    width: 200px;
+    flex-direction: column;
+}
+
+.categorias div {
+    display: flex;
+    flex-direction: column;
+}
+
+.menucategorias {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+/*.menucategorias button{*/
+/*  border: none;*/
+/*  padding-top: 2px;*/
+/*}*/
+
+/* CORES DE BUTTON*/
+.btn {
+    border: 5px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+/* Orange */
+.orange {
+    border-color: #FF4500FF;
+    color: orangered;
+}
+
+.orange:hover {
+    background-color: #FF4500FF;
+    color: white;
+}
+
+/* Green */
+.success {
+    border-color: #04AA6D;
+    color: green;
+}
+
+.success:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Blue */
+.info {
+    border-color: #2196F3;
+    color: dodgerblue
+}
+
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+
+/* Orange */
+.warning {
+    border-color: #ff9800;
+    color: orange;
+}
+
+.warning:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/* Red */
+.danger {
+    border-color: #f44336;
+    color: red
+}
+
+.danger:hover {
+    background: #f44336;
+    color: white;
+}
+
+/* Gray */
+.default {
+    border-color: #e7e7e7;
+    color: black;
+}
+
+.default:hover {
+    background: #e7e7e7;
+}
+
+/*.categorias div small {*/
+/*  width: 0 20px;*/
+/*}*/
+
+.categorias p::after {
+    content: "";
+    width: 30px;
+    height: 5px;
+    background: #da3721;
+    display: inline-block;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.informacao {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.imgs {
+    margin: 20px auto;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-produto {
+    width: 200px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.produto {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-style: groove;
+    margin: 10px;
+}
+
+.texto-produto span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+}
+
+/*!*----------Página de Login----------*!*/
+
+.pHome {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#home {
+    text-decoration: none;
+    color: black;
+}
+
+#voltar {
+    text-decoration: none;
+    color: black;
+}
+
+#pCamiseta {
+    text-decoration: none;
+    color: black;
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.formLogin {
+    background-color: #000000;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 80px;
+    padding: 90px 0;
+}
+
+.form-cadastro {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.formCadastro {
+    display: flex;
+    background-color: #000000;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsCadastro {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.bemVindo {
+    color: #e1e1e1;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+}
+
+.pUsuario {
+    color: #e1e1e1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    width: 275px;
+    height: 16px;
+    margin: 10px;
+}
+
+#inputUsuario {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #e1e1e1;
+    width: 55%;
+}
+
+.pEmail {
+    color: #e1e1e1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    width: 275px;
+    height: 16px;
+    margin: 10px;
+}
+
+#inputEmail {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #e1e1e1;
+    width: 55%;
+}
+
+.pSenha {
+    color: #e1e1e1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    width: 275px;
+    height: 16px;
+    margin: 10px;
+}
+
+#inputSenha {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #e1e1e1;
+    width: 55%;
+}
+
+.pConfirmarSenha {
+    color: #e1e1e1;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 275px;
+    height: 16px;
+    margin: 10px;
+}
+
+#inputConfirmarSenha {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: #e1e1e1;
+    width: 55%;
+}
+
+.divUsuario {
+    padding-top: 5px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divEmail {
+    padding-top: 5px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divSenha {
+    padding-top: 5px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divConfirmarSenha {
+    padding-top: 5px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgotPass {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5px;
+    padding-left: 120px;
+}
+
+.forgotPass a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#pPass {
+    color: #ffffff;
+}
+
+.inputButton {
+    padding-top: 20px;
+}
+
+#inputButton {
+    padding: 12px 65px;
+    border-radius: 20px;
+    border: none;
+    color: black;
+    background-color: #FFA500;
+}
+
+.link-cadastro {
+    padding-top: 70px;
+    font-size: 20px;
+}
+
+.link-cadastro2 {
+    color: #e1e1e1;
+}
+
+.link-cadastro2 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-cadastro2 a:hover {
+    color: #da3721;
+}
+
+
+.cadastro {
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.cadastro2 {
+    color: #e1e1e1;
+}
+
+.cadastro2 a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cadastro2 a:hover {
+    color: #da3721;
+}
+
+/*----------Fechamento Pagina Login----------*/
+/*Listagem*/
+.listagem_alvos {
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.button_edit {
+    padding: 8px 15px;
+    color: white;
+    background-color: green;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.button_listagem {
+    text-align: center !important;
+}
+
+.button_delete {
+    padding: 10px;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* -------FOOTER--------- */
+footer {
+    background-color: #000;
+    color: #ffffff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.button-slide {
+
+}
+
+.footer-login {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.card {
+    flex-shrink: 0;
+    align-self: stretch;
+}

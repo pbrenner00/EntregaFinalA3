@@ -1,0 +1,191 @@
+.cards {
+  display: flex;
+  width: 280px;
+  height: 445px;
+  max-width: 315px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-style: outset;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+}
+.card-imgs{
+  padding: 16px 46px;
+  width: 300px;
+  height: 300px;
+}
+.informacoes{
+  display: flex;
+  padding: 0 133px 0 16px;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+.desconto{
+  color: #666;
+  font-family: Inter, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+.valor {
+  color: #333;
+  font-family: Inter, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.estrelas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rating input {
+  display: none;
+}
+.card-body{
+  flex: 1 1 auto;
+  padding: 0 1rem;
+}
+.text-estrelas{
+  padding-left: 25px;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/star.png');
+  /*background-image: url('/src/img/star.png'); !* Substitua 'star.png' pela sua imagem de estrela *!*/
+  background-size: cover;
+}
+
+.rating label:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url('../img/star-outline.png'); /* Substitua 'star-outline.png' pela sua imagem de estrela vazia */
+  background-size: cover;
+  position: absolute;
+}
+
+.rating input:checked ~ label {
+  background-image: url('../img/star-filled.png'); /* Substitua 'star-filled.png' pela sua imagem de estrela preenchida */
+}
+.dividir{
+  color: #666;
+  /* www_americanas_com_br_busca_carrinho-de-compras_1349x607/Inter/Regular 13.13 */
+  font-family: Inter, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.star_img{
+  padding-left: 1px;
+  width: 18px;
+  height: 18px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #0056b3;
+}
+.formCadastroJogo {
+  background-color: #000000;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 80px;
+}
+.cadastro-jogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divJogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.labelTitulo {
+  color: white;
+  font-size: 25px;
+}
+.inputTitulo{
+  font-size: 25px;
+}
+.informacoesJogo{
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.optPlataforma{
+  font-size: 30px;
+}
+.informacoesPlataforma{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tituloCadastroJogo{
+  font-size: 25px;
+  color: #cccccc;
+  padding: 50px 0 0;
+}
+.divPlataforma {
+  display: flex;
+  justify-content: space-around;
+}
+.divCadastroJogo{
+  display: flex;
+  flex-direction: column;
+}
+.inputCadastro {
+  padding-top: 20px;
+}
+
+#inputCadastro {
+  padding: 12px 65px;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  background-color: #ffa500;
+  font-size: 30px;
+}
+.carosselLegenda{
+  font-size: 25px;
+  display: flex;
+  background: linear-gradient(180deg, black, transparent);
+  flex-direction: column;
+  align-items: center;
+}
+.carosselLegenda h5{
+  font-size: 30px;
+  color: #ffffff;
+}
+.carosselLegenda p{
+  font-size: 15px;
+}
