@@ -1,10 +1,8 @@
 import React from "react";
 import LogoImg from "../img/logo.png";
 import LogoTel from "../img/ico-tel.png";
-import LogoLogin from "../img/ico-login.png";
 
-function Login() {
-
+function recuperarSenha() {
     return (
         <div>
             <header>
@@ -37,19 +35,11 @@ function Login() {
                                         <input id="inputUsuario" type="text" name="usuario"/>
                                     </div>
                                     <div className="divSenha">
-                                        <label className="pSenha" htmlFor="inputSenha">Senha:</label>
+                                        <label className="pSenha" htmlFor="inputSenha">Nova Senha:</label>
                                         <input className="inputSenha" id="inputSenha" type="password" name="senha"/>
                                     </div>
-                                    <div className="forgotPass">
-                                        <a id="pPass" href="/recuperar_senha">Esqueceu a senha?</a>
-                                    </div>
                                     <div className="inputButton">
-                                        <input id="inputButton" type="submit" placeholder="Entrar"/>
-                                    </div>
-                                    <div className="link-cadastro">
-                                        <div className="link-cadastro2">
-                                            Não possui cadastro?<a href="/cadastro_user"> Clique Aqui</a>
-                                        </div>
+                                        <input id="inputButton" type="submit" placeholder="Recuperar"/>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +52,6 @@ function Login() {
             </footer>
         </div>
     );
-
 }
 
-export default Login;
+export default recuperarSenha;

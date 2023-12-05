@@ -9,6 +9,7 @@ import App from './App';
 import Login from './pages/Login';
 import CadastroJogo from './pages/cadastroJogo';
 import CadastroUser from './pages/cadastroUser';
+import RecuperarSenha from "./pages/RecuperarSenha";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -22,6 +23,7 @@ root.render(
                     <Route path="/login" element={<Login/>}/>
                     <Route path="/cadastro_user" element={<CadastroUser/>}/>
                     <Route path="/cadastro_jogo" element={<CadastroJogo/>}/>
+                    <Route path="/recuperar_senha" element={<RecuperarSenha/>}/>
                 </React.Fragment>
             </Routes>
         </BrowserRouter>
